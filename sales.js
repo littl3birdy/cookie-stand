@@ -72,6 +72,12 @@ function tableHeader() {
 
 }
 function tableFooter() {
+  var newTR = document.createElement('tr');
+  for(i=1;i<hours.length;i++){
+    var newTF =document.createElement('tr');
+    newTF.textContent =
+
+  }
 
 }
 
