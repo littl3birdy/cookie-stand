@@ -1,4 +1,57 @@
 header {
-  background-color: #999999;
-  color: whitesmoke;
+  background-color: rgb(71, 109, 134);
+  color: rgb(219, 227, 235);
+  text-align: center;
+  block-size: 20%;  
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.8em 2em;
+}
+
+.links {
+  display: inline-block;
+}
+
+a {
+  background-color: rgb(219, 227, 235);  
+  color: rgb(71, 109, 134);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .5em 1em;
+  margin: .5em 1em;
+}
+
+
+body {
+  background-color: rgb(219, 227, 235);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+table {  
+  color:rgb(13, 37, 53);
+  font-family: Helvetica, Arial, sans-serif; 
+  width: 640px; 
+  border-collapse: collapse; 
+  border-spacing: 0;
+  margin: 0px auto;  
+}
+
+td, th { 
+  border: 1px solid rgb(42, 68, 95); 
+  height: 30px; 
+}
+
+th {  
+  background: rgb(196, 207, 214); 
+  font-weight: bold;
+}
+
+td {  
+  background: rgb(86, 131, 161); 
+  text-align: center;
 }

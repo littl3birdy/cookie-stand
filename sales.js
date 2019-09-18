@@ -54,6 +54,7 @@ CookieStand.prototype.render = function () {
 //Prints header, then table content, then footer with grand total
 function printTable() {
   var table = document.getElementById("cookieTable");
+  table.innerHTML="";
   table.appendChild(tableHeader());
   for (var i = 0; i < CookieStand.all.length; i++) {
     table.appendChild(CookieStand.all[i].render());
@@ -92,7 +93,7 @@ function tableFooter() {
     td.textContent = locHourlyTotals;
     newTR.appendChild(td);
 
-  } 
+  }
   //prints the final total in bottom right corner
   var finalTD = document.createElement('td');
   finalTD.textContent = 'Grand Total: ' + grandTotal;
@@ -106,4 +107,27 @@ new CookieStand('Dubai', 11, 38, 3.7);
 new CookieStand('Paris', 20, 38, 2.3);
 new CookieStand('Lima', 2, 16, 4.6);
 //calls the printTable function and prints the table to the console.
+
+
+var addCookieShop = document.getElementById('user-form-addCookieShop');
+addCookieShop.addEventListener('submit', addShop);
+
+function addShop(event) {
+  event.preventDefault();
+  var location = event.target.name.value;
+  var minCus = event.target.min.value;
+  var maxCus = event.target.max.value;
+  var avgCookies = event.target.average.value;
+
+  alert('Congratulations on the new location in ' + location + '!');
+  new CookieStand(location, +minCus, +maxCus, +avgCookies);
+  console.log(CookieStand.all);
+  printTable();
+
+  event.target.name.value = null;
+  event.target.min.value = null;
+  event.target.max.value = null;
+  event.target.average.value = null;
+}
+
 printTable();

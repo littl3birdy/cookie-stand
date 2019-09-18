@@ -2,16 +2,16 @@
 <html>
 
 <head>
-  <title>Cookie Sales </title>
+  <title>Cookie Sales</title>
   <link rel="stylesheet" type="text/css" href="./css/styles.css" />
 </head>
 
 <body>
   <header>
-    <h1>Cookie Sales</h1>
+    <h1> Cookie Sales</h1>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="sales.html">Sales</a></li>
+      <li class= "links"><a href="index.html">Home</a></li>
+      <li class= "links"><a href="sales.html">Sales</a></li>
     </ul>
   </header>
   <section id=locationInfo>
@@ -21,25 +21,26 @@
     <form id="user-form-addCookieShop">
       <fieldset>
         <h2>Input New Cookie Shop</h2>
+
         <label for="name">Name:</label>
         <input id="name" name="name" type="text" placeholder="name" /><br />
 
         <label for="min">Minimum Customers Per Hour:</label>
-        <input id="min" name="min" type="text" placeholder="Minimum customers per hour" /><br />
+        <input id="min" name="min" type="text" placeholder="Min cus per hour" /><br />
 
         <label for="max">Maximum Customers Per Hour:</label>
-        <input id="max" name="max" type="text" placeholder="Maximum customers per hour" /><br />
+        <input id="max" name="max" type="text" placeholder="Max cus per hour" /><br />
 
-        <label for="average">Average Customers Per Hour:</label>
-        <input id="average" name="average" type="text" placeholder="Average customers per hour" /><br />
+        <label for="average">Average Cookies Per Customer:</label>
+        <input id="average" name="average" type="text" placeholder="Avg cookies per cus" /><br />
 
-        <button type="submit" name="add_store" value="submit" id="addStore">Add Store</button>
+        <button type="submit" name="submit" value="submit" id="submit">Add Shop</button>
       </fieldset>
     </form>
   </section>
   <footer>
   </footer>
-  <script src="./sales.js"></script>
-</body>
+  <script src="sales.js"></script>
+  </body>
 
 </html>
