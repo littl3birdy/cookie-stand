@@ -9,7 +9,10 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   padding: 3%;
+  -webkit-box-shadow: 5px 5px 17px -2px #000000; 
+box-shadow: 5px 5px 17px -2px #000000;
 }
+
 
 .links {
   display: inline-block;
@@ -27,7 +30,9 @@ a {
   text-transform: uppercase;
   padding: 2%;
   margin: .5em 1em;
-  }
+  -webkit-box-shadow: 5px 5px 17px -8px #000000; 
+  box-shadow: 5px 5px 17px -8px #000000;
+}
 
 
 body {
@@ -46,6 +51,7 @@ body {
   padding: .5em 1em;
   margin: .5em 1em;
   text-align: center;
+  
 }
 
 table {  
@@ -55,8 +61,10 @@ table {
   border-collapse: collapse; 
   margin-top: 1% ;
   margin: 0px auto;
-  margin-bottom: 1%;
+  margin-bottom: 3%;
   padding-top: 1.5em;
+  -webkit-box-shadow: 5px 5px 17px -8px #000000; 
+  box-shadow: 5px 5px 17px -8px #000000;
 }
 
 td, th { 
@@ -79,9 +87,10 @@ td {
 fieldset {
   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 2px rgba(107,169,206,0.27);
   background: rgb(196, 207, 214);
-  padding-inline-start: 40%;
+  padding-inline-start: 40%;-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+  }
 
-}
 
 footer {
   margin-top: 2%;
