@@ -15,6 +15,8 @@ function CookieStand(name, minimum, maximum, average) {
   //will be an array of hourly totals
   this.cookiesToBake = [];
   CookieStand.all.push(this);
+  //calls the method when the object is created to prevent duplicate arrays.
+  this.cookiesPerHour();
 }
 
 //generates a random number of customers per hour between locations min and max
@@ -35,7 +37,6 @@ CookieStand.prototype.cookiesPerHour = function () {
 
 //prints to the browser
 CookieStand.prototype.render = function () {
-  this.cookiesPerHour();
   var newTR = document.createElement('tr');
   var locationTag = document.createElement('td');
   locationTag.textContent = this.name;
@@ -58,7 +59,7 @@ function printTable() {
   table.appendChild(tableHeader());
   for (var i = 0; i < CookieStand.all.length; i++) {
     table.appendChild(CookieStand.all[i].render());
-  }
+  }console.log(cookieStand.all);
   table.appendChild(tableFooter());
 }
 //builds header

@@ -57,7 +57,8 @@ body {
 table {  
   color:rgb(13, 37, 53);
   font-family: Helvetica, Arial, sans-serif; 
-  width: 40%; 
+  /* width: 40%;  */
+  height: 80%;
   border-collapse: collapse; 
   margin-top: 1% ;
   margin: 0px auto;
@@ -65,9 +66,10 @@ table {
   padding-top: 1.5em;
   -webkit-box-shadow: 5px 5px 17px -8px #000000; 
   box-shadow: 5px 5px 17px -8px #000000;
+
 }
 
-td, th { 
+tr, th { 
   border: 1px solid rgb(42, 68, 95); 
   height: 30px; 
 }
@@ -90,7 +92,6 @@ fieldset {
   padding-inline-start: 40%;-webkit-box-shadow: 5px 5px 15px 5px #000000; 
   box-shadow: 5px 5px 15px 5px #000000;
   }
-
 
 footer {
   margin-top: 2%;
