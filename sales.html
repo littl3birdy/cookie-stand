@@ -2,16 +2,46 @@
 <html>
 
 <head>
-  <title>Cookie Stand</title>
+  <title>Cookie Sales</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
 </head>
 
 <body>
-      <header><h1>Cookie Stand</h1></header>
-  <section id = locationInfo>
-    <table id= "cookieTable"></table>
+  <header>
+    <h1> Cookie Sales</h1>
+    <ul>
+      <li class= "links"><a href="index.html">Home</a></li>
+      <li class= "links"><a href="sales.html">Sales</a></li>
+    </ul>
+  </header>
+  <section id=locationInfo>
+    <h2 id= "table">Cookie Sales Per Location:</h2>
+    <table id="cookieTable"></table>
   </section>
-  <footer></footer>
-  <script src = "./sales.js"></script>
-</body>
+  <section>
+    <form id="user-form-addCookieShop">
+      <fieldset class="clear">
+        <h2 class>Input New Cookie Shop</h2>
+
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" placeholder="name" /><br />
+
+        <label for="min">Minimum Customers Per Hour:</label>
+        <input id="min" name="min" type="text" placeholder="Min cus per hour" /><br />
+
+        <label for="max">Maximum Customers Per Hour:</label>
+        <input id="max" name="max" type="text" placeholder="Max cus per hour" /><br />
+
+        <label for="average">Average Cookies Per Customer:</label>
+        <input id="average" name="average" type="text" placeholder="Avg cookies per cus" /><br />
+
+        <button type="submit" name="submit" value="submit" id="submit">Add Shop</button>
+      </fieldset>
+    </form>
+  </section>
+  <footer>&copy; 2019 Pats Salmon Cookie Co.
+  </footer>
+  <script src="sales.js"></script>
+  </body>
 
 </html>
