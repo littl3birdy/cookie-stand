@@ -19,7 +19,7 @@ li img{
 
 a {
   color: rgb(131, 164, 185);
-   font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 2px rgba(107,169,206,0.27);
   text-transform: uppercase;
@@ -40,29 +40,82 @@ h1{
 
 h2{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   color:rgba(2, 13, 20, 0.27);
-  margin: 0 auto .5em auto;
 }
+#tagline{
+  margin: 2em auto 2em auto;
+}
+
 #fish{
   float:left;
-  margin:0 1em 1em 3em;
+  margin:1em 1em 1em 4em;
 }
 #family{
   float: left;
+  margin: 1em 1em 1em 4em;
 }
-div{
+article{
   overflow:scroll;
   height: 350px;
-  text-align: left;
-  padding:2em 3em 2em 3em;
-  margin: 1em 1em 1em 1em;
+  text-align: block;
+  padding:.5em 4em 0 4em;
+  margin: 1em 1em 0 1em;
+  font-size: 1em;
 }
-div::-webkit-scrollbar { 
+article::-webkit-scrollbar { 
   display: none; 
 }
 h3 {
-  font-size: 1em;
-  color:rgba(1, 25, 44, 0.27);
+  font-size: 1.5em;
+  color: rgb(219, 227, 235);
   font-weight: bold;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 2px rgba(107,169,206,0.27);
+  text-transform: uppercase;
+  background-color: rgb(71, 109, 134);
+  padding: .5em 1em 0 1em;
+}
+.pat{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(71, 109, 134);
+  padding: 1em 1em .5em 1em;
+  color: rgb(189, 199, 209);
+}
+#location{
+  margin: 0 auto 1em auto
+}
+#stores li {
+  display: inline-block;
+  margin: 2em 3em 1em 3em;
+  color:rgb(71, 109, 134)
+}
+h4 {
+  color:rgb(29, 94, 138);
+  font-weight: bold;
+}
+h5 {
+  color:rgb(29, 94, 138);
+  font-weight: bold;
+}
+#Cutter{
+  float:left;
+  margin: 1em 2em 1em 1em;
+}
+#shirt{
+  float:left;
+  margin: 1em 2em 1em 1em;
+}
+div p{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(71, 109, 134);
+  padding: 1em 1em .5em 1em;
+  color: rgb(189, 199, 209);
+  font-size: 1.5em;
+
+}
+footer {
+  display:inline-block;
+  background-color: rgb(71, 109, 134);
+  width:100%;
+  color:rgb(189, 199, 209);
 }

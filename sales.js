@@ -55,11 +55,11 @@ CookieStand.prototype.render = function () {
 //Prints header, then table content, then footer with grand total
 function printTable() {
   var table = document.getElementById("cookieTable");
-  table.innerHTML="";
+  table.innerHTML = "";
   table.appendChild(tableHeader());
   for (var i = 0; i < CookieStand.all.length; i++) {
     table.appendChild(CookieStand.all[i].render());
-  }console.log(cookieStand.all);
+  }
   table.appendChild(tableFooter());
 }
 //builds header

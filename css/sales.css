@@ -41,21 +41,22 @@ h2{
 table {  
   color:rgb(13, 37, 53);
   font-family: Helvetica, Arial, sans-serif; 
-  /* width: 40%;  */
-  height: 80%;
-  border-collapse: collapse; 
-  margin-top: 1% ;
-  margin: 0px auto;
-  margin-bottom: 3%;
+  width: 80%; 
+  border-collapse:collapse;
+  margin: 1em auto 1.5em auto ;
   padding-top: 1.5em;
-  -webkit-box-shadow: 5px 5px 17px -8px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
   box-shadow: 5px 5px 17px -8px #000000;
 
 }
 
-tr, th { 
+tr th { 
   border: 1px solid rgb(42, 68, 95); 
-  height: 30px; 
+  height: 25px; 
+  text-align:left;
+  padding-top: 1em;
+  padding-bottom: 0;
+  padding-left: .1em
 }
 
 th {  
@@ -65,20 +66,40 @@ th {
 }
 
 td {  
+  padding: .5em;
   background: rgb(86, 131, 161); 
-  text-align: center;
+  text-align: left;
+  border: 1px solid rgb(42, 68, 95); 
   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 2px rgba(107,169,206,0.27);
 }
 
 fieldset {
   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 2px rgba(107,169,206,0.27);
   background: rgb(196, 207, 214);
-  padding-inline-start: 40%;-webkit-box-shadow: 5px 5px 15px 5px #000000; 
   box-shadow: 5px 5px 15px 5px #000000;
-  }
+  text-align: left;
+  width: 25%;
+  margin:0 1em 0 2em;
+  padding:.5em;
+  float:left;
+}
+#frosted {
+  float:left;
+  margin: 0 1em;
+  box-shadow: 5px 5px 15px 5px #000000;
+  
+}
+#chinook {
+  float:right;
+  margin-right: 1em;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
 
 footer {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 2px 2px 2px rgba(107,169,206,0.27);
- }
+  margin:3em 0 0 0;
+  padding:0;
+  display:inline-block;
+  background-color: rgb(71, 109, 134);
+  width:100%;
+  color:rgb(189, 199, 209);
+}
