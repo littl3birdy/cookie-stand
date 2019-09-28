@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 //hours of operation
-var hours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm']
+var hours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm'];
 CookieStand.all = [];
 //This will be the grand total of all cookies at all shops
 var grandTotal = 0;
@@ -23,17 +23,17 @@ function CookieStand(name, minimum, maximum, average) {
 CookieStand.prototype.customersPerHour = function () {
   var range = this.max - this.min;
   return Math.floor(Math.random() * range) + this.min;
-}
+};
 
 //calculates the number of cookies sold per hour for each location
 CookieStand.prototype.cookiesPerHour = function () {
   for (var i = 0; i < hours.length; i++) {
     var howMany = Math.floor(this.customersPerHour() * (this.average));
-    this.total += howMany
+    this.total += howMany;
     this.cookiesToBake.push(howMany);
 
   } grandTotal += this.total;
-}
+};
 
 //prints to the browser
 CookieStand.prototype.render = function () {
@@ -50,12 +50,12 @@ CookieStand.prototype.render = function () {
   dailyTotal.textContent = this.total;
   newTR.appendChild(dailyTotal);
   return newTR;
-}
+};
 
 //Prints header, then table content, then footer with grand total
 function printTable() {
-  var table = document.getElementById("cookieTable");
-  table.innerHTML = "";
+  var table = document.getElementById('cookieTable');
+  table.innerHTML = '';
   table.appendChild(tableHeader());
   for (var i = 0; i < CookieStand.all.length; i++) {
     table.appendChild(CookieStand.all[i].render());
