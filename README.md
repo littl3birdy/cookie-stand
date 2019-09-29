@@ -1,2 +1,2 @@
 # cookie-stand
-Damn Salmon Cookies
+Salmon Cookies
